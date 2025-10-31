@@ -144,7 +144,7 @@ export default function App() {
                 <a
                   href="#pricing"
                 >
-                  View pricing
+                  View pricing 
                 </a>
               </button>
             </div>
