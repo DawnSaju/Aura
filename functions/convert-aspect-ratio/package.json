@@ -1,0 +1,16 @@
+{
+  "name": "convert-aspect-ratio",
+  "version": "1.0.0",
+  "description": "Convert video to different aspect ratio using FFmpeg",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "node-appwrite": "^13.0.0",
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

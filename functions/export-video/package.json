@@ -1,0 +1,18 @@
+{
+  "name": "export-video",
+  "version": "1.0.0",
+  "description": "Export video with text overlays, captions, and trim support using FFmpeg",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "node-appwrite": "^13.0.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "ffmpeg-static": "^5.2.0",
+    "node-fetch": "^3.3.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

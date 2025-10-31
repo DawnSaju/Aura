@@ -1,0 +1,70 @@
+{
+  "projectId": "6903b4840010c8b829a0",
+  "projectName": "aura-video-editor",
+  "functions": [
+    {
+      "$id": "generate-captions",
+      "name": "Generate Captions",
+      "runtime": "node-18.0",
+      "execute": ["any"],
+      "events": [],
+      "schedule": "",
+      "timeout": 900,
+      "enabled": true,
+      "logging": true,
+      "entrypoint": "index.js",
+      "commands": "npm install",
+      "path": "functions/generate-captions",
+      "variables": {
+        "APPWRITE_ENDPOINT": "https://fra.cloud.appwrite.io/v1",
+        "APPWRITE_PROJECT_ID": "6903b4840010c8b829a0",
+        "DATABASE_ID": "6903ba230039932b2443",
+        "COLLECTION_ID": "projects",
+        "BUCKET_ID": "6903b94c001e078679a8",
+        "ASSEMBLYAI_KEY": "60856980cfcd4520923c869df1801911"
+      }
+    },
+    {
+      "$id": "export-video",
+      "name": "Export Video",
+      "runtime": "node-18.0",
+      "execute": ["any"],
+      "events": [],
+      "schedule": "",
+      "timeout": 900,
+      "enabled": true,
+      "logging": true,
+      "entrypoint": "index.js",
+      "commands": "npm install",
+      "path": "functions/export-video",
+      "variables": {
+        "APPWRITE_ENDPOINT": "https://fra.cloud.appwrite.io/v1",
+        "APPWRITE_PROJECT_ID": "6903b4840010c8b829a0",
+        "DATABASE_ID": "6903ba230039932b2443",
+        "COLLECTION_ID": "projects",
+        "BUCKET_ID": "6903b94c001e078679a8"
+      }
+    },
+    {
+      "$id": "convert-aspect-ratio",
+      "name": "Convert Aspect Ratio",
+      "runtime": "node-18.0",
+      "execute": ["any"],
+      "events": [],
+      "schedule": "",
+      "timeout": 900,
+      "enabled": true,
+      "logging": true,
+      "entrypoint": "index.js",
+      "commands": "npm install",
+      "path": "functions/convert-aspect-ratio",
+      "variables": {
+        "APPWRITE_ENDPOINT": "https://fra.cloud.appwrite.io/v1",
+        "APPWRITE_PROJECT_ID": "6903b4840010c8b829a0",
+        "DATABASE_ID": "6903ba230039932b2443",
+        "COLLECTION_ID": "projects",
+        "BUCKET_ID": "6903b94c001e078679a8"
+      }
+    }
+  ]
+}

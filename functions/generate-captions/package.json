@@ -1,0 +1,16 @@
+{
+  "name": "generate-captions",
+  "version": "1.0.0",
+  "description": "Generate captions for videos using AssemblyAI",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "node-appwrite": "^13.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
