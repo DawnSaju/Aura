@@ -59,6 +59,7 @@ export default function EditingPage() {
     const [captions, setCaptions] = useState<ProjectCaption[]>([]);
     const [isGeneratingCaptions, setIsGeneratingCaptions] = useState(false);
     const [includeCaptions, setIncludeCaptions] = useState(true);
+    
     interface TextOverlay {
         id: string;
         text: string;
@@ -105,12 +106,6 @@ export default function EditingPage() {
         { id: 'crop', icon: Crop, label: 'Crop' },
         { id: 'transitions', icon: Settings, label: 'Transitions' },
     ];
-
-    const formatTime = (seconds: number) => {
-        const mins = Math.floor(seconds / 60);
-        const secs = Math.floor(seconds % 60);
-        return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-    };
 
     const loadProject = async () => {
         try {
@@ -302,12 +297,6 @@ export default function EditingPage() {
 
     const handleAddToTimeline = (item: MediaItem) => {
         setActiveMediaId(item.id);
-    };
-
-    const getActiveTextOverlays = () => {
-        return textOverlays.filter(text =>
-            currentTime >= text.startTime && currentTime <= text.endTime
-        );
     };
 
     const handleTextDragStart = (e: React.MouseEvent, textId: string) => {
@@ -740,6 +729,18 @@ export default function EditingPage() {
                 videoElement.volume = 1;
             }
         }
+    };
+
+    const getActiveTextOverlays = () => {
+        return textOverlays.filter(text => 
+            currentTime >= text.startTime && currentTime <= text.endTime
+        );
+    };
+
+    const formatTime = (seconds: number): string => {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
     };
 
     return (
