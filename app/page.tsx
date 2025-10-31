@@ -131,7 +131,7 @@ export default function App() {
 
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
               <a
-                href="/signin"
+                href="/auth/signin"
                 className="focus-ring inline-flex items-center rounded-full px-5 py-2.5 text-[16px] font-medium text-white transition-all"
                 style={{
                   background: 'linear-gradient(180deg, #5C5C5C 0%, #000 100%)',
