@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react';
 import { Menu, X, Play, ChevronDown, ChevronRight, Star, LogIn, LayoutDashboard } from 'lucide-react';
 
-const HERO_POSTER = "https://images.pexels.com/photos/7238751/pexels-photo-7238751.jpeg?auto=compress&cs=tinysrgb&w=1600";
+const HERO_POSTER = "/brand/Aura.png";
 const GALLERY: string[] = [
   "https://images.pexels.com/photos/8115875/pexels-photo-8115875.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "https://images.pexels.com/photos/5408682/pexels-photo-5408682.jpeg?auto=compress&cs=tinysrgb&w=1400",
@@ -85,13 +85,18 @@ export default function App() {
                 <a href="#contact" className="font-['Inter',sans-serif] tracking-[-0.48px] text-[#757575] hover:text-[#212121] transition-colors px-2 py-2">
                   Contact
                 </a>
-                <button
-                  onClick={() => setShowAuthPages(true)}
-                  className="bg-black text-white px-6 py-2.5 rounded-full font-['Inter',sans-serif] tracking-[-0.48px] hover:opacity-90 transition-opacity flex items-center gap-2"
-                >
-                  <LogIn className="w-4 h-4" />
-                  Sign In
-                </button>
+                <a
+                href='/auth/signin'
+                className="focus-ring inline-flex items-center rounded-full px-10 py-2.5 text-[16px] font-medium text-white transition-all"
+                style={{
+                  background: 'linear-gradient(180deg, #5C5C5C 0%, #000 100%)',
+                  boxShadow: 'inset 0 2px 0 rgba(255,255,255,0.30), inset 0 0 0.53px rgba(255,255,255,0.04), 0 2px 5px rgba(0,0,0,0.15)',
+                }}
+              >
+                <div className='flex justify-center items-center gap-2'>
+                  <LogIn className="w-4 h-4" /> Sign In
+                </div>
+              </a>
               </div>
             </div>
           )}
