@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /instructions
+/functions/export-video/node_modules
 /.pnp
 .pnp.*
 .yarn/*
